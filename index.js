@@ -2,8 +2,8 @@ const fs = require('fs');
 const exec = require('child_process').exec;
 
 module.exports = {
-  privateKey: fs.readFileSync('./ssh_id_rsa', 'utf8'),
-  publicKey: fs.readFileSync('./ssh_id_rsa.pub', 'utf8'),
+  privateKey: fs.readFileSync(`${__dirname}/ssh_id_rsa`, 'utf8'),
+  publicKey: fs.readFileSync(`${__dirname}/ssh_id_rsa.pub`, 'utf8'),
   username: 'root',
   password: 'root',
   startContainer: (name, port, done) => {
