@@ -1,6 +1,6 @@
 {
   "name": "any2api-testssh",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Johannes Wettinger <mail@jojow.de>",
   "description": "SSH daemon in Docker container for testing",
   "repository": {
